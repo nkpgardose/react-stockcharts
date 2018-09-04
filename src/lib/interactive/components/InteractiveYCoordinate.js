@@ -47,11 +47,9 @@ class InteractiveYCoordinate extends Component {
 		const {
 			bgFill,
 			bgOpacity,
-
 			textFill,
 			fontFamily,
 			fontSize,
-
 			fontStyle,
 			fontWeight,
 			stroke,
@@ -131,17 +129,13 @@ class InteractiveYCoordinate extends Component {
 		return (
 			<GenericChartComponent
 				clip={false}
-				xxxyyy
 				isHover={this.isHover}
-
 				svgDraw={this.renderSVG}
 				canvasToDraw={getMouseCanvas}
 				canvasDraw={this.drawOnCanvas}
-
 				interactiveCursorClass={interactiveCursorClass}
 				/* selected={selected} */
 				enableDragOnHover
-
 				onDragStart={onDragStart}
 				onDrag={onDrag}
 				onDragComplete={onDragComplete}
@@ -194,21 +188,17 @@ InteractiveYCoordinate.propTypes = {
 		PropTypes.string,
 	]).isRequired,
 	fontStyle: PropTypes.string.isRequired,
-
 	text: PropTypes.string.isRequired,
 	edge: PropTypes.object.isRequired,
 	textBox: PropTypes.object.isRequired,
 	yValue: PropTypes.number.isRequired,
-
 	onDragStart: PropTypes.func.isRequired,
 	onDrag: PropTypes.func.isRequired,
 	onDragComplete: PropTypes.func.isRequired,
 	onHover: PropTypes.func,
 	onUnHover: PropTypes.func,
-
 	defaultClassName: PropTypes.string,
 	interactiveCursorClass: PropTypes.string,
-
 	tolerance: PropTypes.number.isRequired,
 	selected: PropTypes.bool.isRequired,
 	hovering: PropTypes.bool.isRequired,
@@ -218,9 +208,7 @@ InteractiveYCoordinate.defaultProps = {
 	onDragStart: noop,
 	onDrag: noop,
 	onDragComplete: noop,
-
 	fontWeight: "normal", // standard dev
-
 	strokeWidth: 1,
 	tolerance: 4,
 	selected: false,
